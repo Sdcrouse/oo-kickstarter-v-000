@@ -1,4 +1,4 @@
-require "pry"
+#require "pry"
 class Project 
   attr_reader :title, :backers 
   # Personally, I don't think that :backers belongs in attr_accessor, as it is an array.
@@ -12,7 +12,7 @@ class Project
   def add_backer(backer)
     self.backers << backer
     backer.backed_projects << self
-    binding.pry
+    #binding.pry
   end
   
 end
