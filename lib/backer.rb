@@ -1,4 +1,3 @@
-require "pry"
 class Backer 
   attr_reader :name, :backed_projects 
   # I would argue that :backed_projects should not be in attr_accessor.
@@ -12,6 +11,5 @@ class Backer
   def back_project(project)
     self.backed_projects << project
     project.backers << self
-    binding.pry
   end
 end
