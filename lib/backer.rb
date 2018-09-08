@@ -1,3 +1,4 @@
+require "pry"
 class Backer 
   attr_reader :name, :backed_projects 
   # I would argue that :backed_projects should not be in attr_accessor.
